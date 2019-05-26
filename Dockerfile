@@ -46,6 +46,7 @@ RUN sed -i 's/main$/main universe/' /etc/apt/sources.list \
       rsync \
       schedtool \
       squashfs-tools \
+      tmux \
       xsltproc \
       zip \
       zlib1g-dev \
