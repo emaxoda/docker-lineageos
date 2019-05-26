@@ -4,6 +4,12 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][unreleased]
 
+## [0.9.0] - 2019-05-26
+### Added
+- Forked version by me, emaxoda
+- Adjust LineageOS version to lineage-16.0
+- Using zsh, oh-my-zsh, and tmux instead of bash and screen
+
 ## [0.8.0] - 2018-11-19
 ### Added
 - Update build dependencies
