@@ -57,12 +57,13 @@ RUN sed -i 's/main$/main universe/' /etc/apt/sources.list \
       bash-completion \
       bsdmainutils \
       file \
+      locales \
       nano \
-      screen \
       sudo \
       tig \
       vim \
       wget \
+      zsh \
  && rm -rf /var/lib/apt/lists/*
 
 ARG hostuid=1000
@@ -81,6 +82,8 @@ RUN echo "build ALL=NOPASSWD: ALL" > /etc/sudoers.d/build
 
 ADD startup.sh /home/build/startup.sh
 RUN chmod a+x /home/build/startup.sh
+
+RUN sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Fix ownership
 RUN chown -R build:build /home/build
